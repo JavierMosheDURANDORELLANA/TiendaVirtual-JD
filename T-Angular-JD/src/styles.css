@@ -1,1 +1,44 @@
+/* ============Fondos============ */
+
+.login {
+    background-image: url(/assets/img/login-fondo.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    z-index: 0;
+    background-color: #302e2e7c;
+    background-blend-mode: multiply;
+}
+
+
+/* ============Alineamiento vertical============ */
+
+.logtop {
+    margin-top: 15%;
+}
+
+
+/* ============Tamaño de letra============ */
+
+
+/* Login */
+
+.tit1 {
+    font-size: 3rem;
+}
+
+.tit2 {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.titerror {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+
 /* You can add global styles to this file, and also import other style files */
