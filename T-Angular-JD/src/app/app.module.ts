@@ -8,6 +8,10 @@ import { TiendaComponent } from './tienda/tienda.component';
 import { NavbarComponent } from './shared/navbar/navbar.component';
 import { FooterComponent } from './shared/footer/footer.component';
 import { CatalogoComponent } from './catalogo/catalogo.component';
+import { VermasComponent } from './vermas/vermas.component';
+import { DetalleComponent } from './vermas/detalle/detalle.component';
+import { KartComponent } from './kart/kart.component';
+import { ItemsComponent } from './kart/items/items.component';
 
 @NgModule({
   declarations: [
@@ -16,13 +20,14 @@ import { CatalogoComponent } from './catalogo/catalogo.component';
     TiendaComponent,
     NavbarComponent,
     FooterComponent,
-    CatalogoComponent
+    CatalogoComponent,
+    VermasComponent,
+    DetalleComponent,
+    KartComponent,
+    ItemsComponent,
   ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule
-  ],
+  imports: [BrowserModule, AppRoutingModule],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
