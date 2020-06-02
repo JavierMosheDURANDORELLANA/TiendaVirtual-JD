@@ -5,38 +5,25 @@
   <div class="row catscroll">
     <div class="catscroll col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6">
       <ul class="list-group">
-        <li class="list-group-item">
+        <li *ngFor="let product of products" class="list-group-item">
           <div class="row">
             <div class="col-4">
-              <img class="img-fluid" src="./assets/img/palta.jpg" alt="" />
+              <img class="img-fluid" src="{{ product.imagen }} " alt="" />
             </div>
             <div class="col-4">
               <div class="font-size">
-                <span style="font-size: 1.2rem;"> <strong> Palta</strong></span>
+                <span style="font-size: 1.2rem;">
+                  <strong> {{ product.nombre }} </strong></span
+                >
                 <br />
-                <span>Unidades: </span>
+                <span>Unidades: {{ product.cantidad }} </span>
               </div>
             </div>
           </div>
           <div class="row font-size">
-            <span><strong>Subtotal: S/.</strong></span>
-          </div>
-        </li>
-        <li class="list-group-item">
-          <div class="row">
-            <div class="col-4">
-              <img class="img-fluid" src="./assets/img/ajo.jpg" alt="" />
-            </div>
-            <div class="col-4">
-              <div class="font-size">
-                <span style="font-size: 1.2rem;"> <strong> Ajo</strong></span>
-                <br />
-                <span>Unidades: </span>
-              </div>
-            </div>
-          </div>
-          <div class="row font-size">
-            <span><strong>Subtotal: S/.</strong></span>
+            <span
+              ><strong>Subtotal: S/. {{ product.precio }} </strong></span
+            >
           </div>
         </li>
       </ul>

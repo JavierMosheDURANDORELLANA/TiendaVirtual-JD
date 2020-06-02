@@ -1,7 +1,11 @@
+// Angular
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
+// Rounting
 import { AppRoutingModule } from './app-routing.module';
+
+// Componentes
 import { AppComponent } from './app.component';
 import { LoginComponent } from './login/login.component';
 import { TiendaComponent } from './tienda/tienda.component';
@@ -12,6 +16,9 @@ import { VermasComponent } from './vermas/vermas.component';
 import { DetalleComponent } from './vermas/detalle/detalle.component';
 import { KartComponent } from './kart/kart.component';
 import { ItemsComponent } from './kart/items/items.component';
+
+// Servicios
+import { ProductosService } from './servicios/productos.service';
 
 @NgModule({
   declarations: [
@@ -27,7 +34,7 @@ import { ItemsComponent } from './kart/items/items.component';
     ItemsComponent,
   ],
   imports: [BrowserModule, AppRoutingModule],
-  providers: [],
+  providers: [ProductosService],
   bootstrap: [AppComponent],
 })
 export class AppModule {}

@@ -22,6 +22,67 @@
   </div>
   <div class="row container mx-auto catscroll" style="margin-top: 5%;">
     <div
+      *ngFor="let producto of productos"
+      class="col-12 col-sm-12 col-md-4 col-lg-3 col-xl-3"
+      style="margin-bottom: 1.5vh;"
+    >
+      <div class="card" style="border: 2px solid rgba(104, 100, 100, 0.644);">
+        <img
+          class="card-img-top"
+          src=" {{ producto.imagen }} "
+          alt="Card image cap"
+        />
+        <div class="card-body">
+          <h4 class="card-title">{{ producto.nombre }}</h4>
+          <span
+            ><strong>Precio (S/): {{ producto.precio }} </strong></span
+          ><br />
+          <br />
+          <span
+            ><strong
+              >Cantidad disponible: {{ producto.cantidad }}
+            </strong></span
+          >
+        </div>
+        <div class="row">
+          <div class="col-12 align-middle">
+            <a href="#" class="col-4 btn btn-primary btn-sm botsize">Ver más</a>
+            <a
+              href="#"
+              class="col-4 offset-1 btn btn-warning btn-sm text-white botsize"
+              >Añadir</a
+            >
+            <input class="col-3" type="number" placeholder="1" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- <div class="navcolor" style="margin-top: 1%;">
+  <div class="row">
+    <div class="col-6">
+      <h3 class="icolor">Catálogo</h3>
+    </div>
+    <div class="col-6">
+      <div class="justify-content-end">
+        <h4 class="icolor">¿Qué estas buscando?</h4>
+        <form class="form-inline">
+          <input
+            class="form-control mr-sm-2"
+            type="search"
+            placeholder="Search"
+            aria-label="Search"
+          />
+          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">
+            Buscar
+          </button>
+        </form>
+      </div>
+    </div>
+  </div>
+  <div class="row container mx-auto catscroll" style="margin-top: 5%;">
+    <div
       *ngFor="let product of products"
       class="col-12 col-sm-12 col-md-4 col-lg-3 col-xl-3"
       style="margin-bottom: 1.5vh;"
@@ -59,4 +120,4 @@
       </div>
     </div>
   </div>
-</div>
+</div> -->
