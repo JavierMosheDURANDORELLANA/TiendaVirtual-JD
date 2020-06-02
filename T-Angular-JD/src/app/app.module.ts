@@ -19,6 +19,7 @@ import { ItemsComponent } from './kart/items/items.component';
 
 // Servicios
 import { ProductosService } from './servicios/productos.service';
+import { LoginService } from './servicios/login.service';
 
 @NgModule({
   declarations: [
@@ -34,7 +35,8 @@ import { ProductosService } from './servicios/productos.service';
     ItemsComponent,
   ],
   imports: [BrowserModule, AppRoutingModule],
-  providers: [ProductosService],
+  // proveedores de servico
+  providers: [ProductosService, LoginService],
   bootstrap: [AppComponent],
 })
 export class AppModule {}
