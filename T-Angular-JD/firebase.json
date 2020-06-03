@@ -1,0 +1,19 @@
+{
+  "hosting": [
+    {
+      "target": "T-Angular-JD",
+      "public": "dist/T-Angular-JD",
+      "ignore": [
+        "firebase.json",
+        "**/.*",
+        "**/node_modules/**"
+      ],
+      "rewrites": [
+        {
+          "source": "**",
+          "destination": "/index.html"
+        }
+      ]
+    }
+  ]
+}

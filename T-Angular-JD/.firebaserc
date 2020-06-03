@@ -1,0 +1,11 @@
+{
+  "targets": {
+    "tiendavirtual-jd": {
+      "hosting": {
+        "T-Angular-JD": [
+          "tiendavirtual-jd"
+        ]
+      }
+    }
+  }
+}
