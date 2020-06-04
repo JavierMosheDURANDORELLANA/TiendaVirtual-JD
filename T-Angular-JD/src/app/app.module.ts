@@ -26,6 +26,7 @@ import { ItemsComponent } from './kart/items/items.component';
 // Servicios
 import { ProductosService } from './servicios/productos.service';
 import { LoginService } from './servicios/login.service';
+import { VermasService } from './servicios/vermas.service';
 
 @NgModule({
   declarations: [
@@ -49,7 +50,7 @@ import { LoginService } from './servicios/login.service';
     AngularFireAuthModule,
   ],
   // proveedores de servico
-  providers: [ProductosService, LoginService],
+  providers: [ProductosService, LoginService, VermasService],
   bootstrap: [AppComponent],
 })
 export class AppModule {}

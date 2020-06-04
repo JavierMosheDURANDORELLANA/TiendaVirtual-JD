@@ -4,6 +4,7 @@
       <div id="login-column" class="col-md-6">
         <div id="login-box" class="col-md-12">
           <form
+            ngNativeValidate
             [formGroup]="LoginForm"
             (ngSubmit)="onLogin()"
             id="login-form"
@@ -17,7 +18,7 @@
                 >Correro Electrónico</label
               ><br />
               <input
-                required
+                required="required"
                 type="email"
                 name="email"
                 id="email"
@@ -30,7 +31,7 @@
               <label for="password" class="text-white tit2">Constraseña:</label
               ><br />
               <input
-                required
+                required="true"
                 type="password"
                 name="password"
                 id="password"
@@ -40,7 +41,7 @@
               />
             </div>
             <div *ngIf="mensaje">
-              <p class="tit2 text-danger titerror">
+              <p class="tit2 msgerror text-danger titerror">
                 Error en el inicio de sesión
               </p>
             </div>
@@ -57,4 +58,5 @@
       </div>
     </div>
   </div>
+  <app-footer></app-footer>
 </div>
