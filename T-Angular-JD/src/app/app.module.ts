@@ -1,6 +1,12 @@
 // Angular
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { ReactiveFormsModule, FormsModule } from '@angular/forms';
+
+// FireBase
+import { AngularFireModule } from '@angular/fire';
+import { AngularFireAuthModule } from '@angular/fire/auth';
+import { environment } from 'src/environments/environment';
 
 // Rounting
 import { AppRoutingModule } from './app-routing.module';
@@ -34,7 +40,14 @@ import { LoginService } from './servicios/login.service';
     KartComponent,
     ItemsComponent,
   ],
-  imports: [BrowserModule, AppRoutingModule],
+  imports: [
+    BrowserModule,
+    AppRoutingModule,
+    ReactiveFormsModule,
+    FormsModule,
+    AngularFireModule.initializeApp(environment.firebaseConfig),
+    AngularFireAuthModule,
+  ],
   // proveedores de servico
   providers: [ProductosService, LoginService],
   bootstrap: [AppComponent],

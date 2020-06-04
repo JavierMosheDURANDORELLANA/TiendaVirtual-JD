@@ -5,24 +5,24 @@
   <div>
     <ul class="nav">
       <li class="nav-item">
-        <a class="nav-link active" href="#">
+        <a [routerLink]="['/tienda']" class="nav-link active">
           <i class="fas fa-th icolor"></i>
         </a>
       </li>
       <li class="nav-item">
-        <a class="nav-link active" href="#">
+        <a [routerLink]="['/kart']" class="nav-link active">
           <i class="fas fa-shopping-cart icolor">
             <span class="badge badge-pill badge-danger">1</span>
           </i>
         </a>
       </li>
       <li class="nav-item">
-        <a class="nav-link active" href="#">
+        <a class="nav-link active">
           <i class="fas fa-heart icolor"> </i>
         </a>
       </li>
       <li class="nav-item">
-        <a class="nav-link active" href="#">
+        <a (click)="onLogout()" class="nav-link active">
           <i class="fas fa-sign-out-alt icolor"> </i>
         </a>
       </li>
